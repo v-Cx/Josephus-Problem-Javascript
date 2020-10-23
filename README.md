@@ -16,6 +16,18 @@ The details of the mechanism used in this feat are rather vague. According to Ja
 Josephus had an accomplice; the problem was then to find the places of the two last remaining survivors (whose conspiracy would ensure their survival). It is alleged that he placed himself and the other man in the 31st and 16th place respectively.[7]
 </p>
 
+<h4> To learn more </h4>
+<ul>
+  <li>
+    <a href="https://en.wikipedia.org/wiki/Josephus_problem"> Wikipedia </a>
+  </li>
+  <li>
+    <a href="https://www.geeksforgeeks.org/josephus-problem-set-1-a-on-solution/"> GeeksforGeeks </a>
+  </li>
+</ul>
+
+<hr>
+
 <p>
   I wanted to do something like this for both problem solving and fun :)
 </p>
