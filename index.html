@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Josephus Problem | Fun solution with Javascript</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/main.css"></link>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 selectRange w-50">
+                <label for="peopleRange">Select Range</label>
+                <input type="range" min="0" max="100" class="custom-range" id="peopleRange">
+            </div>
+            <div class="col-12 ">
+                <div class="input-group mt-3 mb-2">
+                    <input type="text" id="inputJoseph" class="form-control" placeholder="How Many People Would You Like To Play With?" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary josephBtn" type="button">Start Game</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <svg width="1000" height="1000" id="ekle" xmlns:dc="http://purl.org/dc/elements/1.1/"
+                xmlns:cc="http://creativecommons.org/ns#"
+                xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                xmlns:svg="http://www.w3.org/2000/svg"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1"
+                inkscape:version="0.48.2 r9819"
+                sodipodi:docname="chars.svg">
+                </svg>
+                <svg class="d-none">
+                    <g class="d-none node cloneG" cx="500" cy="500" transform="translate(500,500)"><circle r="50"></circle>
+                </svg>
+            </div>
+        </div>
+        <div class="row">
+            <svg>
+                <g transform="rotate(0 500 500)" class="d-none cloneLine">
+                    <line id="svg_1" y2="500" x2="500" y1="500" x1="0" stroke-width="1.5" stroke="#000" fill="none"></line>
+                    <ellipse ry="20" rx="20" id="svg_2" cy="500" cx="40" stroke-width="5.5" stroke="#000" fill="#fff"></ellipse>
+                    <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="18" id="svg_3" y="506" x="30" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000"></text>
+                </g>
+            </svg>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="assets/main.js"></script>
+</body>
+</html>

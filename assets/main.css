@@ -1,0 +1,125 @@
+body{
+    background: rgb(102,208,40);
+background: linear-gradient(0deg, rgba(102,208,40,1) 0%, rgba(255,239,0,1) 100%);
+}
+
+g{
+    transition: all .2s;
+    stroke-dasharray: 290;
+    stroke-dashoffset: -40;
+    animation: g 3s linear forwards;
+}
+svg g{
+    opacity: 1;
+    transition: all 3s;
+}
+.removeElement{
+    opacity: 0.3;
+    transition: all 3s;
+}
+g line{
+    stroke-width: 1px;
+    fill: #333;
+    stroke: #555;
+    transition: all .2s;
+    stroke-dasharray: 250;
+    stroke-dashoffset: -30;
+    animation: dash 3s linear forwards;
+}
+.line-delete{
+    transition: all .2s;
+    stroke-dasharray: 250;
+    stroke-dashoffset: 5;
+    animation: animationDelete 3s linear alternate;
+}
+.line-delete ellipse{
+    stroke: red;
+}
+.line-won{
+    transition: all .2s;
+    stroke-dasharray: 640;
+    stroke-dashoffset: 982;
+    animation: animationWon 3s linear alternate;
+}
+.g-won{
+    stroke: red;
+    transition: all .2s;
+    stroke-dasharray: 200;
+    stroke-dashoffset: 50;
+    animation: gWon 3s cubic-bezier(0.55, 0.06, 0.68, 0.19) alternate;
+}
+
+g{
+    stroke: red;
+    fill: red;
+    transition: all .2s;
+    z-index: 111;
+}
+
+:not(svg) {
+    transform-origin: 0px 0px;
+}
+
+.d-none{
+    display:none;
+    transition: all .2s;
+}
+@keyframes dash {
+    from{
+        stroke-dasharray: 5;
+        stroke-dashoffset: -40;
+    }
+    to {
+        stroke-dasharray: 290;
+        stroke-dashoffset: -40;
+    }
+}
+@keyframes g {
+    from {
+        stroke-dasharray: 5;
+        stroke-dashoffset: 25;
+    }
+    to {
+        stroke-dasharray: 250;
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes animationDelete {
+    from {
+        stroke-dasharray: 5;
+        stroke-dashoffset: 25;
+    }
+    to {
+        stroke-dasharray: 250;
+        stroke-dashoffset: 0;
+        stroke: red;
+    }
+}
+
+@keyframes animationWon{
+    from{
+        stroke-dasharray: 5;
+        stroke-dashoffset: 25;
+    }
+    to{
+        stroke-dasharray: 640;
+        stroke-dashoffset: 982;
+    }
+}
+@keyframes gWon{
+    from{
+        stroke-dasharray: 5;
+        stroke-dashoffset: 25;
+    }
+    to{
+        stroke-dasharray: 200;
+        stroke-dashoffset: 50;
+    }
+}
+
+.selectRange{
+    position: absolute;
+    top: 0;
+    left: 80px;
+    transform: rotate(90deg)!important;
+}
