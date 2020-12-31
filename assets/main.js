@@ -49,7 +49,6 @@ var inputControl = false;
                 callback();
             }
             
-
             addPeople(removePeople);
             
             const wonPerson = async (callback) => {
