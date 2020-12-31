@@ -13,7 +13,7 @@ var inputControl = false;
             /*People Add Place - Start*/
             const addPeople = async (callback) => {
                 var yazdir = 1;
-                for(let peopleSvg = 0; peopleSvg < 360; peopleSvg +=homosapiensSpace){
+                for(let peopleSvg = 1; peopleSvg < 360; peopleSvg +=homosapiensSpace){
                     $('.cloneLine').clone().removeClass('cloneLine d-none').appendTo( "#ekle" ).attr('transform', "rotate("+ (peopleSvg+10)+", 500, 500)");
                     if(yazdir < 10){
                         $('#ekle g:nth-child('+yazdir+') text[text-anchor]').attr('x','35')
